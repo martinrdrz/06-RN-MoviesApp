@@ -35,13 +35,13 @@ export const useMovies = () => {
 
     setIsLoading(false);
 
-    console.log(nowPlayingMovies[0]);
-    console.log('-----------------------');
-    console.log(popularMovies[0]);
-    console.log('-----------------------');
-    console.log(topRetedMovies[0]);
-    console.log('-----------------------');
-    console.log(upcomingMovies[0]);
+    // console.log(nowPlayingMovies[0]);
+    // console.log('-----------------------');
+    // console.log(popularMovies[0]);
+    // console.log('-----------------------');
+    // console.log(topRetedMovies[0]);
+    // console.log('-----------------------');
+    // console.log(upcomingMovies[0]);
   };
 
   return {isLoading, nowPlaying, popular, topRated, upcoming};
