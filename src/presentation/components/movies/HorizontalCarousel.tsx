@@ -30,8 +30,6 @@ export const HorizontalCarousel = ({movies, title, loadNextPage}: Props) => {
     if (!isEndReached) return;
     isLoading.current = true;
     loadNextPage && loadNextPage();
-
-    //console.log({contentOffset, layoutMeasurement, contentSize});
   };
 
   return (
@@ -52,7 +50,7 @@ export const HorizontalCarousel = ({movies, title, loadNextPage}: Props) => {
         renderItem={({item}) => (
           <MoviePoster movie={item} width={140} height={200} />
         )}
-        keyExtractor={item => item.id.toString()}
+        keyExtractor={(item, index) => `${item.id}-${index}`}
         horizontal={true}
         showsHorizontalScrollIndicator={false}
         onScroll={event => onScroll(event)} //es lo mismo que onScroll={onScroll}
