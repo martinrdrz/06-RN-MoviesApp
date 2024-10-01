@@ -11,7 +11,7 @@ export const moviesTopRatedUseCase = async (
   try {
     const topRated = await fetcher.get<MovieDBMoviesResponse>('/top_rated');
     return topRated.results.map(result =>
-      MovieMapper.fromMovieDBRsultToEntity(result),
+      MovieMapper.fromMovieDBResultToEntity(result),
     );
     //console.log(nowPlaying.results);
     //return [];

@@ -11,7 +11,7 @@ export const moviesNowPlayingUseCase = async (
   try {
     const popular = await fetcher.get<NowPlayingResponse>('/now_playing');
     return popular.results.map(result =>
-      MovieMapper.fromMovieDBRsultToEntity(result),
+      MovieMapper.fromMovieDBResultToEntity(result),
     );
   } catch (error) {
     console.log(error);

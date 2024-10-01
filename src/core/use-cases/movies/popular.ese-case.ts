@@ -21,7 +21,7 @@ export const moviesPopularUseCase = async (
       },
     });
     return nowPlaying.results.map(result =>
-      MovieMapper.fromMovieDBRsultToEntity(result),
+      MovieMapper.fromMovieDBResultToEntity(result),
     );
     //console.log(nowPlaying.results);
     //return [];
