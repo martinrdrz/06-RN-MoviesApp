@@ -27,8 +27,8 @@ export const useMovie = (movieId: number) => {
 
     setIsLoading(false);
 
-    console.log(cast);
+    //console.log(cast);
   };
 
-  return {isLoading, movie};
+  return {isLoading, movie, cast};
 };

@@ -2,6 +2,8 @@ import {Text, View} from 'react-native';
 import {FullMovie} from '../../../core/entities/movie.entity';
 import {FlatList} from 'react-native-gesture-handler';
 import {Formatter} from '../../../config/helpers/formatter';
+import {Cast} from '../../../core/entities/cast.entity';
+import {CastActor} from '../cast/CastActor';
 
 interface Props {
   movie: FullMovie;
